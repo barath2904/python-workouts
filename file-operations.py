@@ -1,18 +1,25 @@
 # r for reading
 # w for writing
 # a for appending
-# r+ for both reading and writing
 
+# creating file with content
+f0 = open("D:\\file1.txt", "w")
+f0.write("Hi Hello Good morning \n")
+f0.write("End of File")
+f0.close()
+
+# reading an existing file
 f1 = open("D:\\file1.txt", "r")
 v1 = f1.read()
 print(v1)
 f1.close()
 
-# creating file
+# creating file with content
 f2 = open("D:\\file2.txt", "w")
 f2.write(v1)
 f2.close()
 
+# appending lines to files
 l1 = "hi"
 l2 = "hello"
 l3 = "hey"
