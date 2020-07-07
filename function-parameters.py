@@ -2,7 +2,8 @@
 """
 Two types of functions
 1. Built-In Functions
-2. User Defined Functions"""
+2. User Defined Functions
+"""
 
 # functions with/without parameters
 # functions with/without return value
@@ -19,10 +20,19 @@ def function2(argument1):
 
 def add_numbers(num1, num2):
     sum_num = num1+num2
+    print(sum_num)
     return sum_num
 
 
+# calling statements for the defined functions
 function1()
 function2(10)
-return_value = add_numbers(1,2)
-print(return_value)
+c1 = add_numbers(1,2)
+c2 = add_numbers(10,20)
+function2(20)
+function2(30)
+
+if c1 > 10:
+    print("sum greater than 10")
+else:
+    print("sum is less than 10")
