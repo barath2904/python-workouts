@@ -4,7 +4,7 @@
 # Restriction levels: private, protected, public
 
 
-class Base(object):
+class Base:
 
     def __private(self):
         print("private value in Base")
@@ -15,7 +15,6 @@ class Base(object):
     def public(self):
         print("public value in Base")
         self.__private()
-        self._protected()
 
 
 class Derived(Base):
@@ -29,5 +28,8 @@ class Derived(Base):
 
 d = Derived()
 d.public()
-d._protected()
-d.__private()
+print("\n\n")
+# not recommended to call protected method & hence it shows warning
+# private methods - we won't be able to call as python doesn't recognize
+# d._protected() ---> will work, but not recommended
+# d.__private ---> will throw error

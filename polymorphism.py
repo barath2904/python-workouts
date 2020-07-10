@@ -1,4 +1,4 @@
-# Polymorphism is creating an similar named entity to represent different behaviours at different types
+# Polymorphism is creating an similar named entity to represent different behaviours at different scenarios
 # method names are same but purposes are different for different scenarios
 # polymorphism can be applicable at built-in function levels as well. "len" is a classic example
 # "len" can be applied on string, list, dictionary, etc. function name is same but usage is different as per data type
@@ -18,6 +18,10 @@ class Asia:
     def type(self):
         print("{} is a developing country".format(self.country))
 
+    @staticmethod
+    def static_method_example():
+        print("method not using any attributes")
+
 
 class NorthAmerica:
 
@@ -33,6 +37,10 @@ class NorthAmerica:
     def type(self):
         print("{} is a developed country".format(self.country))
 
+    @staticmethod
+    def static_method_example():
+        print("method not using any attributes")
+
 
 countries = [Asia(), NorthAmerica()]
 for country in countries:
@@ -40,3 +48,4 @@ for country in countries:
     country.capital()
     country.language()
     country.type()
+    country.static_method_example()
