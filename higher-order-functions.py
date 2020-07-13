@@ -5,7 +5,7 @@ def multiply(multiply_argument):
     return multiply_argument*10
 
 
-def filtering(filter_argument):
+def odd_filtering(filter_argument):
     if (filter_argument % 2) != 0:
         return True
     else:
@@ -17,12 +17,15 @@ def filtering(filter_argument):
 # map() syntax= map(function, iterator object)
 # map() returns map object
 number_list = [1, 2, 3, 4, 5]
-multiply_object = map(lambda x: x * 10, number_list)
+a = (lambda x: x * 10)
+multiply_object = map(a, number_list)
 print("map object: {}".format(multiply_object))
 lambda_multiply = list(multiply_object)
+
 normal_multiply = list(map(multiply, number_list))
 print("multiply result using lambda function: {}".format(lambda_multiply))
 print("multiply result using normal function: {}".format(normal_multiply))
+
 fruits = ["apple", "mango"]
 up_fruits = list(map(str.upper, fruits))
 print("fruits in lower case: {}".format(fruits))
@@ -33,12 +36,12 @@ print("fruits in upper case: {}".format(up_fruits))
 # filter() returns filter object
 print("\n")
 filter_list = [5, 10, 15, 20, 25, 30, 35]
-odd_object = filter(lambda x: (x % 2 != 0), filter_list)
-print("filter object: {}".format(odd_object))
-odd_filtered = list(odd_object)
-print("filtered list using lambda function: {}".format(odd_filtered))
-normal_filtering = list(filter(filtering, filter_list))
-print("filtered list using normal function: {}".format(normal_filtering))
+even_object = filter(lambda x: (x % 2 == 0), filter_list)
+print("filter object: {}".format(even_object))
+even_filtered = list(even_object)
+print("filtered even list using lambda function: {}".format(even_filtered))
+normal_filtering = list(filter(odd_filtering, filter_list))
+print("filtered odd list using normal function: {}".format(normal_filtering))
 
 # reduce function used a mathematical technique called folding
 # folding reduces list of items to single/cumulative item

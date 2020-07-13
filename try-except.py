@@ -2,6 +2,7 @@ import os
 import sys
 
 # various exception combinations
+# keywords: try, except, finally
 
 try:
     print("Try Block")
