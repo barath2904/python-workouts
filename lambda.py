@@ -19,6 +19,6 @@ except Exception as lambda_error:
 
 # lambda implementation without try-except block
 b = (lambda x, y: 3.14 * x * y)
-print("area value using lambda function: {}".format(a(20)))
+print("area value using lambda function: {}".format(b(10,10)))
 
 print("area value using normal function: {}".format(area(10)))
