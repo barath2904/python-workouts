@@ -41,7 +41,7 @@ print(country_capital_list)
 print(country_capital_dic)
 print("\n")
 
-# break - operation to break the loop
+# break - operation to break any loop
 # In python, while loop is used to execute a block of statements repeatedly until a given a condition is satisfied.
 # And when the condition becomes false, the line immediately after the loop in program is executed.
 num = 0

@@ -5,7 +5,7 @@ Two types of functions
 2. User Defined Functions
 """
 
-# functions with/without parameters
+# functions with/without argument
 # functions with/without return value
 
 
@@ -14,21 +14,20 @@ def function1():
 
 
 def function2(argument1):
-    print("parameterized function")
-    print("passed parameter: {}".format(argument1))
+    print("parameterized function or function with arguments")
+    print("argument/parameter: {}".format(argument1))
 
 
 def add_numbers(num1, num2):
-    sum_num = num1+num2
-    print(sum_num)
-    return sum_num
+    print("function with argument & return value")
+    return num1 + num2
 
 
 # calling statements for the defined functions
 function1()
 function2(10)
-c1 = add_numbers(1,2)
-c2 = add_numbers(10,20)
+c1 = add_numbers(1, 2)
+c2 = add_numbers(10, 20)
 function2(20)
 function2(30)
 
