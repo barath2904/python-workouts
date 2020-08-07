@@ -19,17 +19,7 @@ print(countries)
 print(countries.get("unknown_country"))  # will return None if Key not found
 print(countries.get("unknown_country", "NA"))  # will return default value if key not found
 
-# iteration with dictionary
-country_list = []
-country_capital_list = []
-country_capital_dic = {}
-for country_name in countries.keys():
-    country_list.append(country_name)
-for country_capital in countries.values():
-    country_capital_list.append(country_capital)
-for country, capital in countries.items():
-    country_capital_dic[country] = capital
-
-print(country_list)
-print(country_capital_list)
-print(country_capital_dic)
+# print keys & values separately
+print(countries.keys())
+print(countries.values())
+print(countries.items())
