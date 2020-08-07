@@ -30,3 +30,10 @@ print(word_list)
 
 word_list.clear()  # empties the list
 print(word_list)
+print("\n")
+
+# List unpacking
+fruit1, fruit2, fruit3 = ["apple", "banana", "mango"]
+print(fruit1)
+print(fruit2)
+print(fruit3)
