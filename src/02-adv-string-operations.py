@@ -1,6 +1,8 @@
+from collections import Counter
+
+# check occurrence of substring in a string
 check_string = "hellogoodhellogoodhellogoodhello"
 sub_string = "hellogoodhello"
-# check occurrence of substring
 # fetches overlapping count as well
 occurrence_type1 = 0
 occurrence_index_list = []
@@ -14,23 +16,28 @@ print(occurrence_index_list)
 
 # returns non-overlapping count
 print(check_string.count(sub_string))
-
 # --------------------------------------------------------------------------------------------------------------------
+# check maximum occurrence of element in a string/list
 char_freq = {}
-for char in check_string:
+list_val = [1, 2, 4, 5, 1, 2, 1]
+string_val = check_string
+for char in string_val:
     if char in char_freq:
         char_freq[char] += 1
     else:
         char_freq[char] = 1
 print(char_freq)
-max_char = max(char_freq)
-print(F"max occurred character: '{max_char}, Occurrence: {char_freq[max_char]}")
+max_char = max(char_freq, key=char_freq.get)
+print(F"max occurred character: '{max_char}', Occurrence: {char_freq[max_char]}")
 
 # using counter approach
-from collections import Counter
-char_counter = Counter(check_string).items()
-print(max(char_counter))
+char_counter = Counter(check_string)
+print(char_counter)
+print(max(char_counter, key=char_counter.get))
 
+list_counter = Counter([1, 2, 4, 5, 1, 2, 1])
+print(list_counter)
+print(max(list_counter, key=list_counter.get))
 # --------------------------------------------------------------------------------------------------------------------
 
 
