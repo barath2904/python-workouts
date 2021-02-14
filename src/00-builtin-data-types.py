@@ -1,5 +1,6 @@
 # first hands-on
-print("Hello word!")
+print("Hello world!")
+
 # separator can be provided to string function
 print("Day", "Night", sep=" & ")
 
