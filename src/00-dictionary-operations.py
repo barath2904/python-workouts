@@ -10,6 +10,11 @@ print(countries)
 countries["UK"] = "London"
 print(countries)
 
+# key values are case-sensitive
+# retrieving values
+print(countries["India"])
+print(countries["Australia"])
+
 # adding/updating entry
 countries.update({"India": "New Delhi", "France": "Paris"})
 print(countries)

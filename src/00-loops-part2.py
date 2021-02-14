@@ -14,7 +14,7 @@ for fruit in fruits:
     print(bool_value)
 
 new_fruits = []
-for index in range(0, 3):
+for index in range(len(fruits)):
     print(index, fruits[index])  # printing the index & its corresponding value
     new_fruits.append(fruits[index])
 

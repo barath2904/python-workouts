@@ -8,6 +8,11 @@ print('Index value of orange', fruits.index("orange"))
 # A set is an unordered collection of items. Every element is unique (no duplicates).
 # In Python sets are written with curly brackets.
 set1 = {1, 2, 3, 3, 4, 5, 6, 7}
+
+# convert list to set
+l = [1, 1, 2]
+print(set(l))
+
 print(set1)
 set1.add(10)
 
