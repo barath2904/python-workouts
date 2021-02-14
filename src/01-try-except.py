@@ -40,7 +40,6 @@ try:
     print(variable_two)
 except NameError as name_err:
     print("Unable to retrieve variable. Exception: {}".format(name_err))
-    sys.exit(1)
 
 try:
     print(10/0)
@@ -56,5 +55,6 @@ try:
     print("received input: {}".format(user_input))
 except ValueError as input_err:
     print("Unable to retrieve user input. {}".format(input_err))
+    sys.exit(1)
 
 # You can refer for various exceptions in python: https://docs.python.org/3/library/exceptions.html

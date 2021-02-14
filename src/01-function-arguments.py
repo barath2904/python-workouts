@@ -10,12 +10,21 @@ def function3(argument1, argument2, argument3="Good Day"):
     print(f"{argument1} {argument2}! {argument3}")
 
 
+def function4(argument1):
+    print(argument1)
+
+
 function1("hi", "hello")                      # positional argument
 function2(argument2="hello", argument1="hi")  # keyword argument
 
 # calling function3 with default parameter. if no argument is passed, it will take the default value
 function3("hi", "hello", "How are you ?")
 function3("hi", "hello")
+
+string_list = ["hi", "hello"]
+for string_index, string_value in enumerate(string_list):
+    print(F"index value of list item: {string_index}")
+    function4(string_value)
 
 
 # *args & **kwargs are used when number of arguments is not static during function call
