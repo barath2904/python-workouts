@@ -1,4 +1,4 @@
-from src.inheritance import Parents, Child
+from src.oop_inheritance import Parents, Child
 
 boy = Child("Shiva", "Parvathy", "Vinayak")
 boy.get_father_name()
