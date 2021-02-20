@@ -36,3 +36,5 @@ class Child(Parents):
     # method overriding
     def get_location(self):
         print("{} is residing in Malaysia".format(self.child))
+
+# calls are being made from import-module.py program
