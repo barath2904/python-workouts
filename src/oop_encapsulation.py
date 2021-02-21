@@ -32,4 +32,4 @@ print("\n\n")
 # not recommended to call protected method & hence it shows warning
 # private methods - we won't be able to call as python doesn't recognize
 # d._protected() ---> will work, but not recommended
-# d.__private ---> will throw error
+# d.__private()  ---> will throw error
