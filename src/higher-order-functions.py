@@ -27,6 +27,7 @@ print("multiply result using lambda function: {}".format(lambda_multiply))
 print("multiply result using normal function: {}".format(normal_multiply))
 
 fruits = ["apple", "mango"]
+# map usage example with a built-in function
 up_fruits = list(map(str.upper, fruits))
 print("fruits in lower case: {}".format(fruits))
 print("fruits in upper case: {}".format(up_fruits))
