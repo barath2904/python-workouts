@@ -46,7 +46,7 @@ print("filtered odd list using normal function: {}".format(normal_filtering))
 
 # reduce function used a mathematical technique called folding
 # folding reduces list of items to single/cumulative item
-# reduce() syntax= filter(function, iterator object, <optional initializer>)
+# reduce() syntax= reduce(function, iterator object, <optional initializer>)
 reduce_numbers = [10, 20, 30, 40]
 added_value = reduce((lambda x, y: x+y), reduce_numbers)
 # reduce logic
