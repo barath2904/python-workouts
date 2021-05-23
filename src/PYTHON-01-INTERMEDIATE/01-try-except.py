@@ -30,7 +30,7 @@ except FileNotFoundError as no_file_err:
     print("Unable to open the file. Exception: {}".format(no_file_err))
 
 try:
-    file_object = open("../data/input/dummy.txt", "a")
+    file_object = open("../../data/input/dummy.txt", "a")
     file_object.write("Hi hello")
 except PermissionError as access_err:
     print("Unable to open the file. Exception: {}".format(access_err))
