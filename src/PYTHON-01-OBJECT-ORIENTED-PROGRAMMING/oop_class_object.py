@@ -33,7 +33,8 @@ class Person:
             if 18 <= self.age <= 24:
                 print("tamil teenager living in {0}; Nationality: {1}".format(self.area, person_nationality.upper()))
             else:
-                print("other age category living in {x}; Nationality: {y}".format(x=self.area, y=person_nationality.upper()))
+                print("other age category living in {x}; Nationality: {y}".format(x=self.area,
+                                                                                  y=person_nationality.upper()))
         else:
             print("other language person living in {}; Nationality: {}".format(self.area, person_nationality.upper()))
 

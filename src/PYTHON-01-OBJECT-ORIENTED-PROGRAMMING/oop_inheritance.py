@@ -37,4 +37,4 @@ class Child(Parents):
     def get_location(self):
         print("{} is residing in Malaysia".format(self.child))
 
-# calls are being made from import-module.py program
+# calls are being made from oop_import_module.py program
