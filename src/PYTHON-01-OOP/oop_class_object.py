@@ -1,15 +1,3 @@
-# OOP facilitates to have properties & behaviour bundled into an object
-# create own objects that has its own methods (behaviour) & attributes (properties)
-# Example: object person with properties like a name, age and behaviors such as walking, talking
-# class is blueprint for objects. Multiple objects can be created with a class
-# creating object from class is called instantiation
-# function inside a class is called as methods
-# __init__ is a special method that is called when instance of class [object] is created
-# self allows access to the attributes and methods of each object in python
-# class attribute is going to defined outside __init__ method
-# instance attribute are defined within __init__ method
-
-
 class Person:
     # class attribute
     area = "Chennai"
