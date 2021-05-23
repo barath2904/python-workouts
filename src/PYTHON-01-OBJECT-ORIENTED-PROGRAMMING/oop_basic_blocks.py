@@ -22,6 +22,8 @@
 # static method is similar to normal except that it is logically connected to the class
 # class methods & static methods are denoted using decorators: @classmethod & @staticmethod respectively
 
+# Four Principles of OOP : Inheritance, Encapsulation, Abstraction & Polymorphism
+
 class Employee:
     # class attribute/variables
     company = "Microsoft"
@@ -82,4 +84,3 @@ emp_data = "Michael-200000"
 emp3 = Employee.parse_employee(emp_data)
 emp3.calculate_salary()
 emp3.emp_category("FTE")
-

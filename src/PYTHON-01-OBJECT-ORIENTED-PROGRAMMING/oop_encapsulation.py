@@ -64,4 +64,4 @@ print("")
 # print(dir(d))  # --> prints attributes & methods of object
 # d.__private() can be called as d._Base_private() --> Name Mangling
 # Name mangling: Double underscore prefix causes python interpreter to rewrite attribute & method names
-d._Base__private()  # ---> still accessible ; Remember Encapsulation is not enforced
+# d._Base__private()  # ---> still accessible ; Remember Encapsulation is not enforced
