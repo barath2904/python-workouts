@@ -1,4 +1,4 @@
-from src.oop_inheritance import Parents, Child
+from oop_inheritance import Parents, Child
 
 boy = Child("Shiva", "Parvathy", "Murugan")
 boy.get_father_name()  # method inherited from Parents class
