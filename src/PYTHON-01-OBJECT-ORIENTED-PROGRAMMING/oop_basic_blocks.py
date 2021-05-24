@@ -12,6 +12,7 @@
 # Example: object person with properties like a name, age and behaviors such as walking, talking
 
 # __init__ is a special method that is called when instance of class (object) is created.
+# __init__ is also referred as magic or dunder method. Dunder: method name starts & ends with double underscore
 # __init__ is similar to constructor that used to initialize state of an object
 # self represents instance of a class. It allows us access to the attributes and methods of the class.
 # There are 2 types of attributes -> class attribute & instance attribute

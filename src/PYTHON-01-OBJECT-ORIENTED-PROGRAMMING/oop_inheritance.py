@@ -1,6 +1,13 @@
 # Inheritance allows us to define a class that inherits all the methods and attributes (properties) from another class.
 # Parent class or base class [being inherited from] --> Class Parents
 # Child class or derived class [inherits from another class] --> Class Child(Parents)
+# Inheritance benefits with code reuse, extensibility & readability
+# Types of Inheritance - Single, Multiple, Multilevel, Hierarchical, Hybrid
+# Single Inheritance: Derived class inherits from single base class
+# Multiple Inheritance: Derived class inherits from multiple base class
+# Multilevel Inheritance: Base - Intermediate - Derived --> Intermediate is base class for Derived.
+# Hierarchical Inheritance: More than one derived class created from single base class
+# Hybrid: Implemented mix of above mentioned inheritance
 
 
 class Parents:
